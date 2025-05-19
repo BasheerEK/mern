@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meesho</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <style>
+       nav {
+            background-color: white;
+            height: 80px;
+            width: 100%;
+        }
+        .navb {
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .search{
+            width: 50%;
+            margin-left: 20px;
+            height: 50px;
+
+
+            
+        }
+        .meesho {
+            margin-left: 20px;
+        }
+        .text{
+          width: 20px;
+
+        }
+        .nvd{
+          padding-left: 20px;
+          padding-right: 20px;
+          display: flex;
+          justify-content: space-evenly;
+          padding-top: 20px;
+          height: 60px;
+          width: 100%;
+        }
+        .nvdh{
+          font-size: 16px;
+        }
+        hr{
+          margin: 0px;
+        }
+        .min{
+          height: 378px;
+          width: 100%;
+        }
+        .main{
+          background-color: rgb(252, 218, 224);
+          height: 80px;
+          margin: 0px;
+          align-items: center; 
+          align-content:center ;
+          
+        }
+        .prop{
+          display: flex;
+          justify-content: center;
+          background-color: white;
+          margin: 10PX;
+          align-items: center; 
+          align-content:center ;
+          border-radius: 10PX;
+          
+          
+        }
+        .propn{
+          display: flex;
+          justify-content:space-evenly ;
+          align-items: center; 
+          align-content:center ;
+        }
+        .propt{
+          font-size: 20px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          align-items: center; 
+          align-content:center ;
+          text-align: center;
+          padding-top: 12PX;
+          padding-left: 10px;
+          padding-right: 10px; 
+          text-decoration: none;
+        }
+        h6{
+          padding: 10px;
+          font-size: 20px;
+          color: grey;
+        }
+        .sps{
+          display: flex;
+          justify-content: space-evenly;
+          height: 180px;
+          width: 100%;
+          padding: 20px;
+          padding-bottom: 50px;
+        }
+        .curve{
+          text-align: center;
+        }
+        /* .curved{
+          height: 260px;
+          width: 190px;
+          background-color:rgb(42, 42, 210) ;
+          border-radius: 20px;
+          text-align: center;
+          align-items: center;
+          
+          color: white;
+          font-size: 17px;
+          font-weight: 500;
+         
+        } */
+        .box{
+          height: 100px;
+          width: 100px;
+          background-color:rgb(252, 218, 224) ;
+          border-top-right-radius: 50px;
+          border-top-left-radius: 50px;
+        }
+        .cimg{
+          height: 500px;
+          width:100%;
+          padding-bottom: 30px;
+        }
+        .imge{
+          height: 500px;
+          width: 100%;
+          background-size: cover;
+          
+        }
+        .cd{
+          padding-left: 20px;
+          padding-right: 20px;
+          display: flex;
+          justify-content: space-evenly;
+          padding-top: 20px;
+          height: 400px;
+          width: 100%;
+          padding-top: 20px;
+        }
+        .maiin{
+          height: 300px;
+        }
+        .acd{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-right: 30px;
+          padding-left: 20px;
+          padding-top: 10px;
+
+        }
+        /* .item{
+          height: 220px;
+          width: 190px;
+          background-color:rgb(186, 244, 246) ;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        } */
+        .scroll{
+          display: flex;
+          justify-content: space-evenly;
+          width: 100%;
+          height: 120px;
+          background-color:rgb(212, 245, 246) ;
+        }
+        .scrit{
+          background-color: white;
+          height: 80px;
+          width: 170px;
+          margin: auto;
+          align-content: center;
+          border-radius: 15px;
+          padding-left: 35px;
+        }
+        .backn{
+          width: 100%;
+
+         
+        }
+        .last{
+          background-color: white;
+          margin: 30px;
+          margin-left: 30px;
+        }
+        .lsthd{
+          font-size: 40px;
+          padding-left: 20px;
+
+        }
+        .lastn{
+          display: flex;
+          justify-content: space-evenly;
+          padding-top: 20px;
+        }
+        .one{
+          width: 25%;
+          background-color: white;
+          height: 450px;
+        }
+        .two{
+          width: 70%;
+          height: 450px;
+          background-color: white;
+        }
+        .first{
+          
+          border: 1px solid #ddd; 
+          padding: 8px 12px;  
+          border-radius: 6px;   
+          display: inline-flex;
+          align-items: center;
+          font-family: sans-serif;
+          font-size: 14px;
+          color: #555;
+          width: 100%;
+          height: 40px;
+          margin-bottom: 20px;
+        }
+        .first label{
+          margin-right: 20px;
+
+          margin-left: 20px;
+        }
+        .first select{
+          border: none;
+          background: transparent;
+          font-weight: bold;
+          color: #222;
+          font-size: 14px;
+          margin-right: 0px;
+          
+        }
+        .second {
+          width: 100%;
+          border: 1px solid #eee;
+          border-radius: 8px;
+          padding: 16px;
+          font-family: sans-serif;
+        }
+
+        .second h4 {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 4px;
+        }
+
+        .third {
+          font-size: 12px;
+          color: #888;
+          margin-bottom: 10px;
+        }
+
+        .fourth {
+          margin-top: 10px;
+        }
+
+        .fifth {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-weight: bold;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+
+        .sixth {
+          position: relative;
+          margin-bottom: 12px;
+        }
+
+        .sixth input {
+          width: 100%;
+          padding-left: 28px;
+          padding-right: 28px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          font-size: 14px;
+        }
+
+        .seventh{
+          display: block;
+          font-size: 15px;
+          color: #363636;
+          margin-bottom: 10px;
+          padding:3px;
+
+        }
+        .products{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+        }
+        .product {
+          width: 200px;
+          border: 1px solid #eee;
+          border-radius: 10px;
+          padding: 12px;
+          font-family: sans-serif;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .productimg {
+          width: 100%;
+          height: 190px;
+          object-fit: contain;
+          margin-bottom: 10px;
+        }
+
+        .productname {
+          font-size: 14px;
+          color: #333;
+          margin-bottom: 6px;
+        }
+
+        .price {
+          font-weight: bold;
+          font-size: 16px;
+          margin-bottom: 6px;
+        }
+        /* .priced{
+          font-size: 16px;
+          margin-bottom: 6px;
+          text-decoration-style: ;
+        } */
+         /* .off{
+           font-size: 16px;
+           margin-bottom: 6px;
+           color: green;
+         } */
+
+        .tag {
+          font-size: 12px;
+          margin-bottom: 8px;
+        }
+
+        .rating {
+          font-size: 12px;
+          color: #444;
+        }
+
+        .star {
+          background-color: #28a745;
+          color: white;
+          padding-left: 6px;
+          padding-right: 6px;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          border-radius: 6px;
+          margin-right: 6px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid navb">
+              <a class="navbar-brand" href="#">
+                <img src="./meeshoLogo.svg" alt="Logo" width="150" height="40" class="d-inline-block align-text-top meesho">
+              </a>
+              <form class="d-flex search" role="search">
+              
+                <input class="form-control me-2" type="search" placeholder="Try Saree,kur6ti or Search by Product Code" aria-label="Search"/>
+              </form>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" text>
+              <a class="nav-link active" aria-current="page" href="#">Become a supplier </a>
+            </li>
+            <h3>|</h3>
+            <li class="nav-item" text>
+              <a class="nav-link active" aria-current="page" href="#">Invester Relations</a>
+            </li>
+            <h3>|</h3>
+            <li class="nav-item" text>
+              <a class="nav-link active" aria-current="page" href="#">Profile</a>
+            </li>
+            <li class="nav-item" text>
+              <a class="nav-link active" aria-current="page" href="#">Cart</a>
+            </li>
+            
+            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          </div> 
+        </div>
+
+      </nav>
+      <hr>
+      <div class="nvd">
+        <h3 class="nvdh">Women Ethnic</h3>
+        <h3 class="nvdh">Women Western</h3>
+        <h3 class="nvdh">Men</h3>
+        <h3 class="nvdh">Kids</h3>
+        <h3 class="nvdh">Home & Kitchen</h3>
+        <h3 class="nvdh">Beauty & Health</h3>
+        <h3 class="nvdh">Jewellery & Accessories</h3>
+        <h3 class="nvdh">Bags & Footwear</h3>
+        <h3 class="nvdh">Electronics</h3>
+        <h3 class="nvdh">Sports & Fitness</h3>
+      </div>
+      <div class="min">
+        <img src="./1746425994914.webp" alt="" width="100%">
+      </div>
+      <div class="main">
+        <div class="prop">
+          <div class="propn">
+            <img src="./returns.svg" alt="" height="30" width="30">
+            <p class="propt">7 Days Easy Return</p>
+          </div>  
+          <h6>|</h6>
+          <div class="propn">
+            <img src="./cod (1).svg" alt="" height="30" width="30">
+            <p class="propt">Cash on Delivery</p>
+          </div>  
+          <h6>|</h6>
+          <div class="propn">
+            <img src="./lowest-price.svg" alt="" height="30" width="30">
+            <p class="propt">Lowest Prices</p>
+          </div>  
+         
+        </div>
+      </div>
+      <div class="sps">
+        <div class="curve"><div class="box"></div>Ethnic Wear</div>
+        <div class="curve"><div class="box"></div>western Dresses</div>
+        <div class="curve"><div class="box"></div>MensWear</div>
+        <div class="curve"><div class="box"></div>Footwear</div>
+        <div class="curve"><div class="box"></div>Home Decor</div>
+        <div class="curve"><div class="box"></div>Beauty</div>
+        <div class="curve"><div class="box"></div>Accessories</div>
+      </div>
+      <div class="cimg">
+        <img src="./1744698265981.webp" alt=""  class="imge">
+      </div>
+      <div class="maiin">
+        <div class="acd">
+          <div class="acdone">
+            <h3 style="font-size: 40px;">Original Brands</h3>
+          </div>
+          <a href="">VIEW ALL</a>
+        </div>
+        <div class="cd">
+          <!-- <div class="curved">
+            <div class="item">
+              
+            </div>
+            <p style="padding-top: 8px;">Personal Care</p>
+           
+          </div>
+          <div class="curved">
+            
+            <div class="item">
+              
+            </div>
+            <p style="padding-top: 8px;">Electronics</p>
+            
+          </div>
+          <div class="curved">
+            
+            <div class="item">
+              
+            </div>
+            <p style="padding-top: 8px;">Makeup</p>
+            
+          </div>
+          <div class="curved">
+            
+            <div class="item">
+              
+            </div>
+            <p style="padding-top: 8px;">Smartphones</p>
+            
+          </div>
+          <div class="curved">
+            
+            <div class="item">
+              
+            </div>
+
+            <p style="padding-top: 8px;">Men Perfume</p>
+          </div>
+        </div> -->
+        <div class="curved"><img src="./perso.webp" alt=""></div>
+        <div class="curved"><img src="./elec.webp" alt=""></div>
+        <div class="curved"><img src="./makeup.webp" alt=""></div>
+        <div class="curved"><img src="./phone.webp" alt=""></div>
+        <div class="curved"><img src="./perf.webp" alt=""></div>
+      </div>  
+      <div class="scroll">
+        <div class="scrit"><img src="./bata.webp" alt="" width="100" height="55"></div>
+        <div class="scrit"><img src="./himalaya.webp" alt="" width="100" height="70"></div>
+        <div class="scrit"><img src="./mi9.webp" alt=""  width="100" height="70" style="border-radius: 10px;"></div>
+        <div class="scrit"><img src="./nivea.webp" alt=""width="100" height="70"></div>
+        <div class="scrit"><img src="./plum.webp" alt=""width="100" height="70" ></div>
+        <div class="scrit"><img src="./wild.webp" alt=""width="100" height="70" ></div>
+        <div class="scrit"><img src="./mama.webp" alt=""width="100" height="70" ></div>
+      
+      </div>
+      <div class="back">
+        <img src="./bg.webp" alt="" class="backn">
+      </div>
+      <div class="last">
+        <div class="lsthd">Products For You</div>
+          <div class="lastn">
+
+            <div class="one">
+              
+                <div class="first">
+                  <label for="sort">Sort by:</label>
+                  <select id="sort">
+                    <option value="relevance">Relevance</option>
+                    <option value="date">Date</option>
+                    <option value="popularity">Popularity</option>
+                  </select>
+                </div>
+                <div class="second">
+                  <h4>FILTERS</h4>
+                  <p class="third">1000+ Products</p>
+                  <hr>
+                  
+                  <div class="fourth">
+                    <div class="fifth">
+                      <h5>Category</h5>
+                    </div>
+                    
+                    <div class="sixth">
+                      <input type="text" placeholder="Search">
+                    </div>
+                    <br>
+
+                    <div class="checkboxes">
+                      <label class="seventh"><input type="checkbox"> Women T-shirts</label>
+                      <label class="seventh"><input type="checkbox"> Women Tops And Tunics</label>
+                      <label class="seventh"><input type="checkbox"> Analog Watches</label>
+                      <label class="seventh"><input type="checkbox"> Bangles & Bracelets</label>
+                      <label class="seventh"><input type="checkbox"> Bedsheets</label>
+                      <label class="seventh"><input type="checkbox"> Bike Covers</label>
+                      <label class="seventh"><input type="checkbox"> Blouses</label>
+                      <label class="seventh"><input type="checkbox"> Bluetooth Headphones</label>
+                      <label class="seventh"><input type="checkbox"> Boxes,Baskets & Bins</label>
+                      <label class="seventh"><input type="checkbox"> Dresses</label>
+                    </div>
+                  </div>
+                </div>
+
+
+            </div>
+            <div class="two">
+              <div class="products">
+                <div class="product">
+                  <img src="./1.webp" alt="" class="productimg">
+                  <div class="productname">Poco M6 Pro 5G Cases...</div>
+                  <div class="price">₹159</div>
+                  <div class="tag">Free Delivery</div>
+                  <div class="rating">
+                    <span class="star">4.0 ★</span>
+                    <span class="reviews">154 Reviews</span>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./2.webp" alt="" class="productimg">
+                  <div class="productname">JVBRANGI Polyster W...</div>
+                  <div class="price">₹295</div>
+                  <div class="tag">Free Delivery</div>
+                  <div class="rating">
+                    <span class="star">3.9 ★</span>
+                    <span class="reviews">944 Reviews</span>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./3.webp" alt="" class="productimg">
+                  <div class="productname">Useful Clothes Covers</div>
+                  <div class="price">₹161</div>
+                  <!-- <div class="priced">₹178</div>
+                  <div class="off">10% off</div> -->
+                  <div class="tag">Free Delivery</div>
+                  <div class="rating">
+                    <span class="star">4.2 ★</span>
+                    <span class="reviews">79952 Reviews</span>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./4.webp" alt="" class="productimg">
+                  <div class="productname">Mobile Holders</div>
+                  <div class="price">₹113</div>
+                  <div class="tag">Free Delivery</div>
+                  <div class="rating">
+                    <span class="star">4.0 ★</span>
+                    <span class="reviews">26499 Reviews</span>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./5.webp" alt="" class="productimg">
+                  <div class="productname">Allure Colourful Bracelet...</div>
+                  <div class="price">₹266</div>
+                  <div class="tag">Free Delivery</div>
+                  <div class="rating">
+                    <span class="star">4.1 ★</span>
+                    <span class="reviews">7902 Reviews</span>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./6.webp" alt="" class="productimg">
+                  <div class="productname">Trendy Retro Men Shirts</div>
+                  <div class="price">₹141</div>
+                  <div class="tag">Free Delivery</div>
+                  <div class="rating">
+                    <span class="star">4.1 ★</span>
+                    <span class="reviews">29782 Reviews</span>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./7.webp" alt="" class="productimg">
+                  <div class="productname">Alisha Sensational Sare...</div>
+                  <div class="price">₹445</div>
+                  <div class="tag">Free Delivery</div>
+                  <div class="rating">
+                    <span class="star">4.0 ★</span>
+                    <span class="reviews">4525</span> Reviews</span>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./8.webp" alt="" class="productimg">
+                  <div class="productname">Chithrarekha Attractive ...</div>
+                  <div class="price">₹187</div>
+                  <div class="tag">Free Delivery</div>
+                  <div class="rating">
+                    <span class="star">4.0 ★</span>
+                    <span class="reviews">80371 Reviews</span>
+                  </div>
+                </div>
+               
+
+              </div>  
+            </div>
+                    
+          </div>
+      </div>
+      
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
